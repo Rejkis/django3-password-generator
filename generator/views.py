@@ -18,6 +18,8 @@ def about(request):
 
 def password(request):
 
+    print(request)
+
     characters = list('abcdefghijklmnopqrstuvwxyz')
     if request.GET.get('uppercase'):
         characters.extend(list('ABCDEFGHIJKLMNOPQRSTUVWXYZ'))
